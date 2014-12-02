@@ -1,0 +1,9 @@
+.htaccess
+sftp-config.json
+sftp-config-alt.json
+
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+
+*.zip
