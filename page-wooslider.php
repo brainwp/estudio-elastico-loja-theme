@@ -33,6 +33,7 @@ Template Name: WooCommerce com slider
                     <?php 
                     $bg = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full', false );
                     $bg = 'background-image:url('.$bg[0].');';
+                    $woo_atts = get_post_meta( get_the_ID(), '_product_attributes', true );                    
                     ?>
                     <div class="swiper-slide" style="<?php echo $bg; ?>">
                         
@@ -40,11 +41,11 @@ Template Name: WooCommerce com slider
                             <div class="row">
                                 <div class="large-8 large-centered medium-10 medium-centered columns">
                                     <div class="main-slider-elements">
-                                        <?php if (get_the_title()) { ?>
-                                            <h1><?php echo get_the_title() . "<br />"; ?></h1>
+                                        <?php if ($woo_atts['artista']['value']) { ?>
+                                            <h1><?php echo $woo_atts['artista']['value'] . "<br />"; ?></h1>
                                         <?php } ?>
-                                        <?php if (get_the_content()) { ?>
-                                            <h2><?php echo the_excerpt() . "<br />"; ?></h2>
+                                        <?php if (get_the_title()) { ?>
+                                            <h2><?php echo get_the_title() . "<br />"; ?></h2>
                                         <?php } ?>
                                         <?php if (get_the_permalink()) { ?>
                                             <a class="slider_button" href="<?php the_permalink(); ?>">Leia mais</a> 
