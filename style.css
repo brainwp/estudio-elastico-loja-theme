@@ -21,12 +21,10 @@ Version: 1.2.1
 .site-tools ul li a, .product_after_shop_loop .price, .woocommerce-ordering:before, .select2-container, .big-select, select.big-select, .select2-dropdown-open.select2-drop-above .select2-choice, .select2-dropdown-open.select2-drop-above .select2-choices, .select2-container .select2-choice, .yith-wcwl-add-button, .yith-wcwl-wishlistaddedbrowse .feedback, .yith-wcwl-wishlistexistsbrowse .feedback, .shopping_bag_items_number, .wishlist_items_number, .woocommerce .star-rating span:before, .woocommerce-page .star-rating span:before, .woocommerce-page .woocommerce-breadcrumb a, .woocommerce-page .woocommerce-breadcrumb a:hover, .breadcrumbs > * a, .breadcrumbs > * span, .panel.callout a, .side-nav li a, .has-tip:hover, .has-tip:focus, a {
 	color: #67AD85 !important;	
 }
-
-
-
-
-
-
+@media only screen and (min-width: 786px) {
+	#products-grid > li{
+	width:25%;
+}
 
 
 
