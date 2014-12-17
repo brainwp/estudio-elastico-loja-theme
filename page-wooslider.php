@@ -31,7 +31,7 @@ Template Name: WooCommerce com slider
 					$query_slider->the_post();
 				?>
                     <?php 
-                    $bg = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full', false );
+                    $bg = wp_get_attachment_image_src( get_post_meta( get_the_id(), 'imagem_slider', true ), 'full', false );
                     $bg = 'background-image:url('.$bg[0].');';
                     $woo_atts = get_post_meta( get_the_ID(), '_product_attributes', true );                    
                     ?>
