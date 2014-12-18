@@ -50,6 +50,14 @@ Version: 1.2.1
 	color: #999 !important;
 }
 
+.site-footer-widget-area {
+	padding-top: 0 !important;;
+}
+
+.site-footer-widget-area .widget {
+	margin-bottom: 30px !important;
+}
+
 .site-footer-widget-area .columns {
 	padding-left: 40px;
 	padding-right: 0;
