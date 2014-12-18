@@ -81,6 +81,10 @@ Version: 1.2.1
 	max-height: 50px !important;
 }
 
+#site-navigation a {
+	color: #000 !important;
+}
+
 
 
 /****************************************************************/
