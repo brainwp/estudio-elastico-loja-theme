@@ -10,6 +10,7 @@
 						
 							<div class="site-footer-widget-area">
 								<div class="row">
+                                    <div class="large-3 medium-6 small-12 columns logo-footer"></div>
 									<?php dynamic_sidebar( 'footer-widget-area' ); ?>
 								</div><!-- .row -->
 							</div><!-- .site-footer-widget-area -->
