@@ -50,6 +50,37 @@ Version: 1.2.1
 	color: #999 !important;
 }
 
+.site-footer-widget-area .columns {
+	padding-left: 40px;
+	padding-right: 0;
+}
+
+.site-footer-widget-area .columns:first-child {
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+
+.site-footer-copyright-area {
+	border-top: 1px solid #d9d9d7;
+}
+
+.site-footer-copyright-area .row {
+	padding-top: 30px;
+	max-width: 72rem;
+}
+
+.copyright_text {
+	text-align: left !important;
+}
+
+.payment_methods {
+    text-align: right !important;
+}
+
+.payment_methods img {
+	max-height: 50px !important;
+}
+
 
 
 /****************************************************************/

@@ -10,7 +10,6 @@
 						
 							<div class="site-footer-widget-area">
 								<div class="row">
-                                    <div class="large-3 medium-6 small-12 columns logo-footer"></div>
 									<?php dynamic_sidebar( 'footer-widget-area' ); ?>
 								</div><!-- .row -->
 							</div><!-- .site-footer-widget-area -->
@@ -19,7 +18,16 @@
 						
                         <div class="site-footer-copyright-area">
                             <div class="row">
-                                <div class="medium-4 columns">	
+
+                                <div class="medium-4 columns">
+                                    <div class="copyright_text">
+                                        <?php if ( (isset($mr_tailor_theme_options['footer_copyright_text'])) && (trim($mr_tailor_theme_options['footer_copyright_text']) != "" ) ) { ?>
+                                            <?php _e( $mr_tailor_theme_options['footer_copyright_text'], 'mr_tailor' ); ?>
+                                        <?php } ?>
+                                    </div><!-- .copyright_text -->  
+                                </div><!-- .large-4 .columns -->
+
+                                <div class="medium-8 columns">	
                                     <div class="payment_methods">
                                         
                                         <?php
@@ -36,15 +44,9 @@
                                         <?php } ?>
             
                                     </div><!-- .payment_methods -->
-                                </div><!-- .large-4 .columns -->
+                                </div><!-- .large-8 .columns -->
+                             
                                 
-                                <div class="medium-8 columns">
-                                    <div class="copyright_text">
-                                        <?php if ( (isset($mr_tailor_theme_options['footer_copyright_text'])) && (trim($mr_tailor_theme_options['footer_copyright_text']) != "" ) ) { ?>
-                                            <?php _e( $mr_tailor_theme_options['footer_copyright_text'], 'mr_tailor' ); ?>
-                                        <?php } ?>
-                                    </div><!-- .copyright_text -->  
-                                </div><!-- .large-8 .columns -->            
                             </div><!-- .row --> 
                         </div><!-- .site-footer-copyright-area -->
                                
