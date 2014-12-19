@@ -39,7 +39,7 @@ Version: 1.2.1
 }
 
 .widget_nav_menu {
-	margin-top: 50px;
+	margin-top: 35px;
 }
 
 .widget_nav_menu a {
@@ -50,12 +50,20 @@ Version: 1.2.1
 	color: #999 !important;
 }
 
+#site-footer {
+	padding: 20px 0px 20px !important;
+}
+
 .site-footer-widget-area {
 	padding-top: 0 !important;;
 }
 
+.site-footer-widget-area .textwidget img {
+	max-width: 80%;
+}
+
 .site-footer-widget-area .widget {
-	margin-bottom: 30px !important;
+	margin-bottom: 20px !important;
 }
 
 .site-footer-widget-area .columns {
@@ -73,7 +81,7 @@ Version: 1.2.1
 }
 
 .site-footer-copyright-area .row {
-	padding-top: 30px;
+	padding-top: 20px;
 	max-width: 72rem;
 }
 
@@ -82,7 +90,7 @@ Version: 1.2.1
 }
 
 .payment_methods {
-    text-align: right !important;
+    text-align: center !important;
 }
 
 .payment_methods img {
